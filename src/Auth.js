@@ -74,8 +74,8 @@ class Auth {
   signOut() {
     // clear id token, profile, and expiration
     this.auth0.logout({
-      returnTo: 'http://localhost:3000',
-      clientID: 'H5WocKc729qvrAw8L3nKSUN7srQQdIxq',
+      returnTo: process.env.REACT_APP_AUTH0_REDIRECT_URI,
+      clientID: process.env.REACT_APP_AUTH0_CLIENT_ID,
     });
   }
 }

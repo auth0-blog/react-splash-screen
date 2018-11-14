@@ -16,3 +16,7 @@ code {
 nav.navbar {
   margin-bottom: 40px;
 }
+
+html, body, #root {
+  height: 100%;
+}
